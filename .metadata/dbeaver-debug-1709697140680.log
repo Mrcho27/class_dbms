@@ -1,0 +1,132 @@
+2024-03-05 09:15:44.598 - DBeaver 23.3.5.202402181738 is starting
+2024-03-05 09:15:44.599 - OS: Windows 10 10.0 (amd64)
+2024-03-05 09:15:44.600 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2024-03-05 09:15:44.600 - Install path: 'D:\0900_gb_csh\dbms\resource\dbeaver'
+2024-03-05 09:15:44.600 - Instance path: 'file:/D:/0900_gb_csh/dbms/workspace/'
+2024-03-05 09:15:44.601 - Memory available 64Mb/1024Mb
+2024-03-05 09:15:44.607 - Create display
+2024-03-05 09:15:44.665 - Initialize desktop platform...
+2024-03-05 09:15:44.737 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.10.200.v20231102-0934]
+> Start Core Resource Management [org.eclipse.core.resources 3.20.0.v20231102-0934]
+> Start 팀 지원 핵심 [org.eclipse.team.core 3.10.200.v20231106-1240]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.125.202402181738]
+2024-03-05 09:15:44.889 - Initialize base platform...
+2024-03-05 09:15:44.902 - Platform initialized (237ms)
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.125.202402181738]
+2024-03-05 09:15:44.930 - Starting instance server at http://localhost:51033
+2024-03-05 09:15:44.934 - Run workbench
+> Start Eclipse e4 작업영역 SWT [org.eclipse.e4.ui.workbench.swt 0.17.200.v20231030-2045]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.200.v20231103-2012]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.200.v20231030-2045]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.200.v20231030-2045]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.200.v20231030-2045]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.200.v20231108-1058]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.36.0.v20231002-1156]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.200.v20230913-1724]
+> Start Eclipse e4 작업영역 기능 추가 [org.eclipse.e4.ui.workbench.addons.swt 1.5.200.v20231106-1600]
+> Start Eclipse e4 작업영역 SWT 렌더러 [org.eclipse.e4.ui.workbench.renderers.swt 0.16.200.v20231030-2045]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.100.v20231103-2012]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.200.v20231025-0632]
+> Start jna [com.sun.jna 5.13.0.v20230812-1000]
+Warning: NLS unused message: BlockedJobsDialog_UserInterfaceTreeElement in: org.eclipse.ui.internal.progress.messages
+2024-03-05 09:15:45.877 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.115.202402181738]
+2024-03-05 09:15:45.962 - Total database drivers: 112 (112)
+> Start 도움말 시스템 코어 [org.eclipse.help 3.10.200.v20231106-1240]
+2024-03-05 09:15:46.019 - Create actions
+2024-03-05 09:15:46.024 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2024-03-05 09:15:46.025 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2024-03-05 09:15:46.025 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2024-03-05 09:15:46.231 - Initialize workbench window
+2024-03-05 09:15:46.235 - Finish initialization
+> Start 기본 문서 편집기 [org.eclipse.ui.editors 3.17.100.v20231106-1600]
+> Start 텍스트 편집기 프레임워크 [org.eclipse.ui.workbench.texteditor 3.17.200.v20231106-1600]
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.125.202402181738]
+Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.125.202402181738]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.101.202402181738]
+> Start 핵심 비교 지원 [org.eclipse.compare.core 3.8.300.v20231106-1240]
+> Start 인터넷 연결 관리 사용자 인터페이스 [org.eclipse.ui.net 1.5.200.v20231106-1240]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.200.v20231106-1240]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.162.202402181738]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.131.202402181738]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.14.100.202311222042]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.16.0.202311222042]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.85.202402181738]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.85.202402181738]
+> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.116.202402181738]
+> Start 콘솔 [org.eclipse.ui.console 3.13.100.v20230914-0751]
+Warning: NLS unused message: InputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+Warning: NLS unused message: OutputStreamMonitor_label in: org.eclipse.debug.internal.core.DebugCoreMessages
+> Start 디버그 핵심 [org.eclipse.debug.core 3.21.200.v20231021-1513]
+2024-03-05 09:15:47.461 - Connect with 'localhost' (oracle_thin-18e06c8f853-7bddb62008584003)
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.18.202402181738]
+> Start DBeaver Oracle Model [org.jkiss.dbeaver.ext.oracle 2.1.210.202402181738]
+2024-03-05 09:15:47.483 - Execution context opened (localhost; Main; 0)
+> Start DBeaver SQL Language Semantic Model [org.jkiss.dbeaver.model.lsm 1.0.20.202402181738]
+2024-03-05 09:15:47.882 - Execution context opened (localhost; Metadata; 1)
+2024-03-05 09:15:47.951 - Connected (oracle_thin-18e06c8f853-7bddb62008584003, Oracle JDBC driver [23.2.0.0.0])
+2024-03-05 09:15:47.956 - Execution context opened (localhost; SQLEditor <ex02.sql>; 2)
+> Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.103.202402181738]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.112.202402181738]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.103.202402181738]
+Warning: NLS unused message: FileDescription_NewFileProgress in: org.eclipse.ui.internal.ide.undo.messages
+Warning: NLS unused message: FileDescription_ContentsCouldNotBeRestored in: org.eclipse.ui.internal.ide.undo.messages
+Warning: NLS unused message: FolderDescription_NewFolderProgress in: org.eclipse.ui.internal.ide.undo.messages
+Warning: NLS unused message: FolderDescription_SavingUndoInfoProgress in: org.eclipse.ui.internal.ide.undo.messages
+2024-03-05 09:16:22.541 - Auth model 'native' was replaced by 'oracle_native'
+2024-03-05 09:16:22.554 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
+2024-03-05 09:16:33.240 - Connect with 'jdbc:oracle:thin:@//localhost:1521/XE' (oracle_thin-18e0bf81bc3-43abd336e6285bdd)
+2024-03-05 09:16:33.241 - Execution context opened (jdbc:oracle:thin:@//localhost:1521/XE; Main; 3)
+2024-03-05 09:16:33.263 - Connected (oracle_thin-18e0bf81bc3-43abd336e6285bdd, Oracle JDBC driver [23.2.0.0.0])
+2024-03-05 09:16:33.277 - Execution context closed (jdbc:oracle:thin:@//localhost:1521/XE, 3)
+2024-03-05 09:16:33.277 - Disconnected (oracle_thin-18e0bf81bc3-43abd336e6285bdd)
+2024-03-05 09:16:37.110 - Connect with 'localhost' (oracle_thin-18e0bf7f1d4-69a6c2bb857a7bac)
+2024-03-05 09:16:37.112 - Execution context opened (localhost; Main; 4)
+2024-03-05 09:16:37.126 - Execution context opened (localhost; Metadata; 5)
+2024-03-05 09:16:37.145 - Connected (oracle_thin-18e0bf7f1d4-69a6c2bb857a7bac, Oracle JDBC driver [23.2.0.0.0])
+2024-03-05 09:16:43.054 - Execution context opened (localhost; SQLEditor <Script.sql>; 6)
+2024-03-05 09:17:13.136 - java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.stm.STMTreeNode.getNodeName()" because "node" is null
+java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.stm.STMTreeNode.getNodeName()" because "node" is null
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectIdentifier(SQLQueryModelRecognizer.java:752)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectQualifiedName(SQLQueryModelRecognizer.java:833)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectTableName(SQLQueryModelRecognizer.java:814)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.traverseForIdentifiers(SQLQueryModelRecognizer.java:452)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.recognizeQuery(SQLQueryModelRecognizer.java:650)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob.doWork(SQLBackgroundParsingJob.java:408)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob$1.run(SQLBackgroundParsingJob.java:71)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:114)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-03-05 09:17:53.694 - java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.stm.STMTreeNode.getNodeName()" because "node" is null
+java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.stm.STMTreeNode.getNodeName()" because "node" is null
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectIdentifier(SQLQueryModelRecognizer.java:752)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectQualifiedName(SQLQueryModelRecognizer.java:833)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectTableName(SQLQueryModelRecognizer.java:814)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.traverseForIdentifiers(SQLQueryModelRecognizer.java:452)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.recognizeQuery(SQLQueryModelRecognizer.java:650)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob.doWork(SQLBackgroundParsingJob.java:408)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob$1.run(SQLBackgroundParsingJob.java:71)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:114)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+> Start DBeaver Data Transfer [org.jkiss.dbeaver.data.transfer 2.0.109.202402181738]
+2024-03-05 09:18:48.697 - java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.stm.STMTreeNode.getNodeName()" because "node" is null
+java.lang.NullPointerException: Cannot invoke "org.jkiss.dbeaver.model.stm.STMTreeNode.getNodeName()" because "node" is null
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectIdentifier(SQLQueryModelRecognizer.java:752)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectQualifiedName(SQLQueryModelRecognizer.java:833)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.collectTableName(SQLQueryModelRecognizer.java:814)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.traverseForIdentifiers(SQLQueryModelRecognizer.java:452)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLQueryModelRecognizer.recognizeQuery(SQLQueryModelRecognizer.java:650)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob.doWork(SQLBackgroundParsingJob.java:408)
+	at org.jkiss.dbeaver.ui.editors.sql.semantics.SQLBackgroundParsingJob$1.run(SQLBackgroundParsingJob.java:71)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:114)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+> Start DBeaver Tasks View [org.jkiss.dbeaver.tasks.ui.view 1.0.74.202402181738]
+> Start DBeaver PostgreSQL Model [org.jkiss.dbeaver.ext.postgresql 2.1.198.202402181738]
+> Start DBeaver PostgreSQL UI [org.jkiss.dbeaver.ext.postgresql.ui 1.0.101.202402181738]
+2024-03-05 12:49:59.758 - Execution context closed (localhost, 2)
+2024-03-05 12:49:59.794 - Execution context closed (localhost, 6)
+2024-03-05 12:49:59.921 - DBeaver is stopping
+2024-03-05 12:49:59.923 - Stop instance server
+2024-03-05 12:50:00.927 - Instance server has been stopped
+2024-03-05 12:50:00.927 - DBeaver shutdown completed

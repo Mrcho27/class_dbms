@@ -1,0 +1,210 @@
+-- TO_CHAR()
+
+SELECT SYSDATE FROM DUAL;
+
+SELECT TO_CHAR(SYSDATE, 'YYYY.MM.DD')FROM DUAL; 
+
+SELECT TO_CHAR(SYSDATE, 'YYYY"년" MM"월" DD"일"')FROM DUAL; 
+
+SELECT 123123123 FROM DUAL;
+
+-- 숫자에 콤마 찍기
+-- 형식보다 큰 자리수가 들어오면 데이터가 손상된다.
+-- 형식 지정시 0 또는 9를 사용하며
+-- 9를 사용하면 남는 자리수는 공백으로 채운다.
+-- 0을 사용하면 남는 자리수는 0으로 채운다.
+-- FM을 형식 가장 왼쪽에 넣어주면 불필요한 공백을 제거해준다.
+
+SELECT TO_CHAR(123123123, 'FM9,999,999,999') FROM DUAL;
+SELECT TO_CHAR(123123123, '0,000,000,000') FROM DUAL;
+
+
+-- TO_NUMBER()
+SELECT '1000' FROM DUAL;
+
+SELECT TO_NUMBER('1000') FROM DUAL;
+
+SELECT '1000' + '1000' FROM DUAL;
+
+-- TO_DATE()
+SELECT TO_DATE('1900.01.01', 'YYYY.MM.DD') + 10 
+FROM DUAL; 
+
+-- 집합
+/*
+ * UNION : 합집합, 중복을 허용하지 않는다.
+ * UNION ALL : 합집합, 중복을 허용한다.
+ * INTERSECT : 교집합
+ * MINUS : 차집합
+ */
+
+SELECT *FROM EMP e 
+WHERE DEPTNO = 30;
+
+SELECT *FROM EMP e 
+WHERE DEPTNO = 10;
+
+-- 합집합
+
+SELECT *FROM EMP e 
+WHERE DEPTNO = 30
+UNION
+SELECT *FROM EMP e 
+WHERE DEPTNO = 10;
+
+-- 합집합 중복행
+SELECT *FROM EMP e 
+WHERE SAL BETWEEN 1000 AND 2000
+UNION 
+SELECT *FROM EMP e 
+WHERE SAL BETWEEN 1500 AND 3000;
+
+SELECT *FROM EMP e 
+WHERE SAL BETWEEN 1000 AND 2000
+UNION ALL
+SELECT *FROM EMP e 
+WHERE SAL BETWEEN 1500 AND 3000;
+
+
+--
+SELECT * FROM EMP e ;
+SELECT * FROM DEPT d ;
+
+
+-- 오류 : 열의 수가 다르면 UNION을 사용할 수 없다.
+SELECT * FROM EMP e 
+UNION
+SELECT * FROM DEPT d ;
+
+
+-- 오류 : 열의 타입이 일치하지 않으면 UNION을 사용할 수 없다.
+SELECT EMPNO , DEPTNO , JOB  FROM EMP e 
+UNION
+SELECT * FROM DEPT d ;
+
+
+-- 열의 수와 타입이 일치한다면 UNION 사용 가능
+SELECT EMPNO 번호, ENAME  , JOB  FROM EMP e 
+UNION
+SELECT * FROM DEPT d ;
+
+
+-- UNION이 두 테이블을 합치고 ORDER BY가 실행되므로
+-- 합쳐지기 이전의 칼럼명이나 소속을 이용해도 정렬이 되지 않는다.
+SELECT EMPNO 번호, ENAME  , JOB  FROM EMP e 
+UNION
+SELECT * FROM DEPT d 
+ORDER BY E.EMPNO ;
+
+SELECT EMPNO 번호, ENAME  , JOB  FROM EMP e 
+UNION
+SELECT * FROM DEPT d 
+ORDER BY 번호 DESC ;
+
+-----------------------------------------------------
+-- 교집합
+SELECT PLAYER_NAME 이름, TEAM_ID  팀, HEIGHT 키, WEIGHT 몸무게
+FROM PLAYER p 
+WHERE HEIGHT BETWEEN 185 AND 186 
+INTERSECT
+SELECT PLAYER_NAME 이름, TEAM_ID  팀, HEIGHT 키, WEIGHT 몸무게
+FROM PLAYER p 
+WHERE WEIGHT  BETWEEN 76 AND 78; 
+
+
+-- 차집합
+SELECT PLAYER_NAME 이름, TEAM_ID  팀, HEIGHT 키, WEIGHT 몸무게
+FROM PLAYER p 
+WHERE HEIGHT BETWEEN 185 AND 186 
+MINUS
+SELECT PLAYER_NAME 이름, TEAM_ID  팀, HEIGHT 키, WEIGHT 몸무게
+FROM PLAYER p 
+WHERE WEIGHT  BETWEEN 76 AND 78;
+
+-----------------------------------------------------------
+-- VIEW
+/*
+ * 기존의 테이블은 그대로 놔둔 채 필요한 컬럼들 및 새로운 컬럼을 만든
+ * 가상 테이블이다.
+ * 실제 데이터가 저장되는것은 아니지만 VIEW를 통해서 데이터를 관리할
+ * 수 있다.
+ * 
+ * - 독립성 : 다른 곳에서 원본 테이블에 접근하지 못하도록 하는 성질
+ * - 편리성 : 긴 쿼리문을 짧게 만드는 성질
+ * - 보안성 : 기존의 쿼리문이 보이지 않는다.
+ */
+
+-- CREATE VIEW 뷰이름 AS 쿼리문;
+
+-- PLAYER테이블에서 나이 칼럼을 추가한 뷰 만들기
+SELECT *FROM PLAYER p ;
+
+SELECT P.*, SYSDATE - BIRTH_DATE 
+FROM PLAYER p ;
+
+SELECT P.*, (SYSDATE - BIRTH_DATE) /365 
+FROM PLAYER p ;
+
+SELECT P.*, ROUND((SYSDATE - BIRTH_DATE)/365 ,2) AGE  
+FROM PLAYER p ;
+
+CREATE VIEW VIEW_PLAYER AS 
+SELECT P.*, ROUND((SYSDATE - BIRTH_DATE)/365 ,2) AGE  
+FROM PLAYER p ;
+
+SELECT * FROM VIEW_PLAYER;
+SELECT AGE FROM VIEW_PLAYER ;
+
+/*
+ * EMPLOYEES 테이블에서 사원 이름과 그 사원의 
+ * 매니저 이름이 있는 VIEW를 만들기
+ * 단, LAST_NAME과 FIRST_NAME연결하기
+ * PK, FK는 포함시키기
+ */
+
+SELECT * FROM EMPLOYEES E ;
+
+-- SELF JOIN
+SELECT E.LAST_NAME || ' ' || E.FIRST_NAME AS "사원이름",
+       M.LAST_NAME || ' ' || M.FIRST_NAME AS "매니저 이름"
+FROM EMPLOYEES E JOIN EMPLOYEES M
+ON E.MANAGER_ID = M.EMPLOYEE_ID;
+
+-- PK,FK는 가능하다면 포함시키는게 좋다.
+
+SELECT E.EMPLOYEE_ID,
+	E.DEPARTMENT_ID,
+	E.JOB_ID,
+	E.LAST_NAME || ' ' || E.FIRST_NAME AS "사원이름",
+       M.LAST_NAME || ' ' || M.FIRST_NAME AS "매니저 이름"
+FROM EMPLOYEES E JOIN EMPLOYEES M
+ON E.MANAGER_ID = M.EMPLOYEE_ID;
+
+-- VIEW 만들기
+CREATE VIEW VIEW_EMPLOYEES AS
+SELECT E.EMPLOYEE_ID,
+	E.DEPARTMENT_ID,
+	E.JOB_ID,
+	E.LAST_NAME || ' ' || E.FIRST_NAME AS "사원이름",
+       M.LAST_NAME || ' ' || M.FIRST_NAME AS "매니저 이름"
+FROM EMPLOYEES E JOIN EMPLOYEES M
+ON E.MANAGER_ID = M.EMPLOYEE_ID;
+
+SELECT *FROM VIEW_EMPLOYEES;
+
+GRANT UPDATE, DELETE, INSERT ON EMPLOYEES TO SCOTT;
+
+REVOKE SELECT , UPDATE , DELETE, INSERT ON EMPLOYEES
+	FROM SCOTT;
+
+
+
+
+
+
+
+
+
+
+
+

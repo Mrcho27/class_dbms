@@ -1,0 +1,9 @@
+driver.selector.orderBy=score
+eclipse.preferences.version=1
+project.active=jdbc
+resultset.presentation.active=spreadsheet
+resultset.text.tab.size=6
+sample.database.canceled=true
+tipOfTheDayInitializer.notFirstRun=true
+ui.auto.update.check.time=1709697150053
+ui.show.tip.of.the.day.on.startup=true
